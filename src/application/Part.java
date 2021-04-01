@@ -34,7 +34,7 @@ abstract public class Part implements Moveable, Drawable{
 	public int getPrevXPos() {
 		return this.prevXPos;
 	}
-	public int getprevYPos() {
+	public int getPrevYPos() {
 		return this.prevYPos;
 	}
 	public String getDir() {

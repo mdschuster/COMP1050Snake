@@ -63,8 +63,18 @@ public class Main extends Application {
 			if(e.getCode()==KeyCode.RIGHT) {
 				h.setDir("RIGHT");
 			}
+			if(e.getCode()==KeyCode.SPACE) {
+				addBody(parts,p);
+			}
 		});
 		
+	}
+	
+	
+	public static void addBody(ArrayList<Part> parts, Pane pane) {
+		Body b = new Body(parts);
+		parts.add(b);
+		pane.getChildren().add(b.getGraphic());
 	}
 	
 
